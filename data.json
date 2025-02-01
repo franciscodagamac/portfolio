@@ -1,0 +1,123 @@
+[
+    {
+        "name": "Francisco R. Dagamac Jr",
+        "title": [
+            "Web Developer",
+            "Prestashop",
+            "Shopify",
+            "Wordpress"
+        ],
+        "phone": "+639362956250",
+        "email": "franciscodagamac@gmail.com",
+        "address": {
+            "street": "B. Yñota St.",
+            "brgy": "Brgy. Monbon",
+            "city": "Sta. Margarita",
+            "province": "Samar",
+            "zip_code": "6709"
+        },
+        "social_links": {
+            "linkedin": "https://www.linkedin.com/in/fransxz/",
+            "whatsapp": "https://wa.me/+639362956250",
+            "facebook": "https://www.facebook.com/profile.php?id=100087192502472",
+            "email": "mailto:franciscodagamac@gmail.com"
+        },
+        "bio": "With a robust six years of experience in the dynamic field of web development, I bring a wealth of expertise to the table. My journey in the industry has been marked by a relentless pursuit of excellence, coupled with a keen eye for innovation. From crafting visually stunning and user-friendly interfaces to navigating the intricacies of back-end development, I have consistently delivered projects that not only meet but exceed client expectations. My proficiency extends across a diverse range of technologies and frameworks, ensuring adaptability to the ever-evolving digital landscape. With a passion for creating seamless online experiences and a proven track record of successful projects, I am poised to contribute my exceptional web development skills to your team or project, driving success and user satisfaction.",
+        "experience": {
+            "Sonnet Digital": {
+                "year": "May 2024 to Nov 2024",
+                "role": "Front-End Developer",
+                "description": "Provide front-end technical expertise to digital production from maintenance projects to full builds. Implements and/or develops standard compliant web-based front-end solutions."
+            },
+            "Open Look Business Solutions": {
+                "year": "Jan 2023 to Apr 2024",
+                "role": "Web Developer",
+                "description": "Responsible for designing, coding and modifying web and desktop applications, from layout to function and according to specifications. Strive to create applications that feature user-friendly design and clear navigation."
+            },
+            "Qonvex Technology": {
+                "year": "Jan 2018 to Dec 2022",
+                "role": "Fullstack Web Developer",
+                "description": "Team leader of an e-commerce team specializing in PrestaShop, Wordpress and Shopify. Lead website redesigns, created custom themes and modules, and collaborated with clients and designers to deliver intuitive user interfaces. Managed both front-end and back-end development."
+            }
+        },
+        "services": {
+            "Web Development/Maintenance": {
+                "icon": "code",
+                "description": "Provided ongoing website maintenance services, ensuring smooth operation, regular updates, bug fixes, and backups for optimal website performance."
+            },
+            "Web Design": {
+                "icon": "design_services",
+                "description": "Created a visually appealing and user-friendly website design that adapts seamlessly across all devices for optimal user experience."
+            },
+            "E-commerce Development": {
+                "icon": "integration_instructions",
+                "description": "Developed an efficient and fully functional e-commerce platform with secure payment gateways, inventory management, and order tracking."
+            },
+            "Content Management System": {
+                "icon": "wordpress",
+                "description": "Integrated a robust and user-friendly CMS solution to empower the client to easily update and manage website content without technical knowledge."
+            },
+            "Search Engine Optimization": {
+                "icon": "query_stats",
+                "description": "Implemented effective SEO strategies to improve organic search rankings and drive targeted traffic, resulting in increased online visibility and conversions."
+            },
+            "Support": {
+                "icon": "support_agent",
+                "description": "Post-web development support involves maintaining and updating websites after launch."
+            }
+        },
+        "skills": {
+            "HTML": "95%",
+            "CSS3": "95%",
+            "JS/jQuery": "90%",
+            "PHP": "90%",
+            "MySQL": "90%",
+            "Prestashop": "92%",
+            "WordPress": "90%",
+            "Shopify": "80%",
+            "GIT": "90%"
+        },
+        "work": {
+            "Regional Prosperity": {
+                "image": "rp.svg",
+                "platform": "WordPress",
+                "link": "https://regionalprosperity.au/"
+            },
+            "Restech Today": {
+                "image": "rtt.png",
+                "platform": "WordPress",
+                "link": "https://restechtoday.com/"
+            },
+            "Richardson Life Magazine": {
+                "image": "rlm.png",
+                "platform": "WordPress",
+                "link": "https://richardsonlifemagazine.com/"
+            },
+            "Studio Seizh": {
+                "image": "ss.svg",
+                "platform": "Front-End",
+                "link": "https://studioseizh.com/"
+            },
+            "Rubberfabriek": {
+                "image": "rf.jpg",
+                "platform": "Prestashop",
+                "link": "https://rubberfabriek.be/"
+            },
+            "Scarpe Chaussures": {
+                "image": "sc.png",
+                "platform": "Prestashop",
+                "link": "https://scarpe-chaussures.com/"
+            },
+            "Fred Mecene": {
+                "image": "fm.webp",
+                "platform": "Prestashop",
+                "link": "https://www.fredmecene.com/"
+            },
+            "Pieces Levage": {
+                "image": "pl.png",
+                "platform": "Prestashop",
+                "link": "https://www.pieceslevage.com/"
+            }
+        }
+    }
+]

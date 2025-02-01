@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-scss": "sass assets/scss/styles.scss assets/css/styles.css",
+    "watch-scss": "sass --watch assets/scss/styles.scss:assets/css/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.83.4"
+  },
+  "dependencies": {
+    "owl.carousel": "^2.3.4"
+  }
+}
