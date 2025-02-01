@@ -1,16 +1,76 @@
 $(document).ready(function(){
 
-    $(".main").onepage_scroll({
-        sectionContainer: "section.panel",
-        loop: false,
-        keyboard: true
+    function resizeWindow() {
+        if ($(window).width() > 1024) {
+            $(".main").onepage_scroll({
+                sectionContainer: "section.panel",
+                loop: false,
+                keyboard: true
+            });
+        }
+
+        if ($(window).width() <= 1024) {
+            $('.panel.my-services .columns').addClass('owl-carousel owl-theme').owlCarousel({
+                margin: 60,
+                nav: false,
+                stagePadding: 80,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 2,
+                    }
+                }
+            });
+
+            $('.panel.skills .container').addClass('owl-carousel owl-theme').owlCarousel({
+                margin: 60,
+                nav: false,
+                stagePadding: 80,
+                responsive: {
+                    0: {
+                        items: 1,
+                        margin: 30,
+                        stagePadding: 30,
+                    },
+                    600: {
+                        items: 3,
+                    }
+                }
+            });
+        } else {
+            $('.panel.my-services .columns, .panel.skills .container').removeClass('owl-carousel owl-theme').trigger('destroy.owl.carousel');
+        }
+    }
+    
+    resizeWindow();
+
+    $(window).resize(function() {
+        resizeWindow();
     });
 
-    $('.owl-carousel').owlCarousel({
+    $('.worksectioncarousel').owlCarousel({
         loop: true,
-        margin: 10,
-        nav: true,
-        items: 2
+        margin: 60,
+        nav: false,
+        stagePadding: 80,
+        responsive: {
+            0: {
+                items: 1,
+                margin: 30,
+                stagePadding: 30,
+            },
+            600: {
+                items: 2,
+            },
+            1024: {
+                items: 3,
+            },
+            1330: {
+                items: 4,
+            }
+        }
     });
 
 
