@@ -4,6 +4,7 @@ body {
   line-height: 1.7;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
 }
 @media (max-width: 1024px) {
@@ -19,6 +20,9 @@ body {
 body a {
   text-decoration: none;
   color: #fafafa;
+}
+body a:hover {
+  color: #FF9000;
 }
 body p {
   margin: 0;
@@ -43,6 +47,90 @@ body p {
   font-size: 27px;
 }
 
+.main header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(10px);
+  padding: 20px 3rem;
+  transition: padding 0.3s ease;
+  z-index: 1000;
+}
+.main header.shrink {
+  padding: 10px 40px;
+}
+.main header.shrink .logo {
+  height: 60px !important;
+  transition: height 0.3s ease;
+}
+@media (max-width: 600px) {
+  .main header.shrink .logo {
+    height: 32px !important;
+  }
+}
+.main header .inner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+}
+.main header .inner-content .logo {
+  height: 70px;
+}
+@media (max-width: 600px) {
+  .main header .inner-content .logo {
+    height: 40px;
+  }
+}
+.main header .inner-content .logo img {
+  height: 100%;
+  object-fit: contain;
+}
+.main header .inner-content .menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10;
+}
+@media (max-width: 1024px) {
+  .main header .inner-content .menu-toggle {
+    display: block;
+    color: #fff;
+  }
+}
+.main header .inner-content nav {
+  display: flex;
+  gap: 3rem;
+}
+@media (max-width: 1024px) {
+  .main header .inner-content nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background: rgb(51, 51, 51);
+    height: 100vh;
+    width: 250px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.3s ease;
+  }
+}
+.main header .inner-content nav.active {
+  right: 0;
+}
+.main header .inner-content nav a {
+  display: block;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3607843137);
+}
+.main header .inner-content nav a.active {
+  color: #FF9000;
+}
 .main .panel {
   background-color: #161616;
   color: #fafafa;

@@ -15,6 +15,7 @@ body {
     line-height: 1.7;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     text-rendering: optimizeLegibility;
 
     @media(max-width: $tablet) {
@@ -28,6 +29,10 @@ body {
     a {
         text-decoration: none;
         color: $font-color;
+
+        &:hover {
+            color: $highlight-color;
+        }
     }
 
     p {
@@ -62,7 +67,100 @@ body {
 // end Coming soon
 
 .main {
-  
+    
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        // background: rgba(51, 51, 51, 0.7);
+        backdrop-filter: blur(10px);
+        padding: 20px 3rem;
+        transition: padding 0.3s ease;
+        z-index: 1000;
+
+        &.shrink {
+            padding: 10px 40px;
+
+            .logo {
+                height: 60px!important;
+                transition: height .3s ease;
+
+                @media (max-width: $mobile) {
+                    height: 32px!important;
+                }
+            }
+        }
+        
+        .inner-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: auto;
+            width: 100%;
+            
+            .logo {
+                height: 70px;
+
+                @media (max-width: $mobile) {
+                    height: 40px;
+                }
+
+                img {
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .menu-toggle {
+                display: none;
+                cursor: pointer;
+                font-size: 24px;
+                z-index: 10;
+
+                @media (max-width: $tablet) {
+                    display: block;
+                    color: #fff;
+                }
+            }
+
+            nav {
+                display: flex;
+                gap: 3rem;
+
+                @media (max-width: $tablet) {
+                    position: fixed;
+                    top: 0;
+                    right: -100%;
+                    background: rgba(51, 51, 51, 1);
+                    height: 100vh;
+                    width: 250px;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    transition: right 0.3s ease;
+                }
+
+                &.active {
+                    right: 0;
+                }
+
+
+                a {
+                    display: block;
+                    text-transform: uppercase;
+                    text-shadow: 1px 1px 2px #0000005c;
+
+                    &.active {
+                        color: $highlight-color;
+                    }
+                }
+            }
+        }
+    }
+
 
     .panel {
         background-color: $primary-color;
