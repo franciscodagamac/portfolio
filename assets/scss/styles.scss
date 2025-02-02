@@ -38,36 +38,7 @@ body {
     p {
         margin: 0;
     }
-}
 
-// Coming soon SCSS
-
-.nocontent_yet {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .content {
-        text-align: center;
-
-        h1 {
-            font-size: 60px;
-            margin: 0;
-            text-transform: uppercase;
-        }
-
-        p {
-            margin: 0;
-            font-size: 27px;
-        }
-    }
-}
-
-// end Coming soon
-
-.main {
-    
     header {
         position: fixed;
         top: 0;
@@ -160,7 +131,35 @@ body {
             }
         }
     }
+}
 
+// Coming soon SCSS
+
+.nocontent_yet {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content {
+        text-align: center;
+
+        h1 {
+            font-size: 60px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin: 0;
+            font-size: 27px;
+        }
+    }
+}
+
+// end Coming soon
+
+.main {
 
     .panel {
         background-color: $primary-color;
