@@ -37,8 +37,15 @@ body header {
   transition: padding 0.3s ease;
   z-index: 1000;
 }
+@media (max-width: 600px) {
+  body header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 body header.shrink {
-  padding: 10px 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 body header.shrink .logo {
   height: 60px !important;
@@ -156,6 +163,12 @@ body header .inner-content nav a.active {
   padding: 7rem 3rem;
   width: 100%;
 }
+@media (max-width: 820px) {
+  .main .panel .inner-section .content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
 .main .panel .inner-section .content h2.section-title {
   color: #fff;
   font-size: 40px;
@@ -205,6 +218,11 @@ body header .inner-content nav a.active {
   -ms-transform: rotate(-5deg);
   -o-transform: rotate(-5deg);
   transform: rotate(-5deg);
+}
+@media (max-width: 600px) {
+  .main .panel.banner .content h1 {
+    font-size: 36px;
+  }
 }
 .main .panel.banner .content h1 span {
   padding: 4px 15px;
