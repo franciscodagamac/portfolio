@@ -11,6 +11,11 @@ body {
     overflow: auto;
   }
 }
+@media (max-width: 820px) {
+  body {
+    font-size: 14px;
+  }
+}
 body a {
   text-decoration: none;
   color: #fafafa;
@@ -41,7 +46,6 @@ body p {
 .main .panel {
   background-color: #161616;
   color: #fafafa;
-  height: 100vh;
   overflow: hidden;
   position: relative;
 }
@@ -59,14 +63,9 @@ body p {
   justify-content: center;
   height: 100%;
 }
-@media (max-width: 1024px) {
-  .main .panel .inner-section {
-    padding: 7em 0;
-  }
-}
 .main .panel .inner-section .content {
   max-width: 1200px;
-  padding: 0 3rem;
+  padding: 7rem 3rem;
   width: 100%;
 }
 .main .panel .inner-section .content h2.section-title {
@@ -79,6 +78,7 @@ body p {
 }
 @media (max-width: 820px) {
   .main .panel .inner-section .content h2.section-title {
+    font-size: 30px;
     margin-bottom: 1.5em;
   }
 }
@@ -96,6 +96,7 @@ body p {
 }
 .main .panel.banner {
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/banner.jpg) center/cover no-repeat;
+  height: 100vh;
 }
 .main .panel.banner .content {
   text-align: center;
@@ -189,12 +190,9 @@ body p {
 }
 .main .panel.about-me .two-col .right .social-links-wrapper {
   justify-content: flex-start;
+  margin-top: 2rem;
 }
 .main .panel.work-experience .content h2.section-title {
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-weight: 700;
   margin-bottom: 0;
 }
 @media (max-width: 820px) {
@@ -228,7 +226,8 @@ body p {
   }
 }
 .main .panel.work-experience .content .column-center__content:first-of-type h4 {
-  margin-top: 4rem;
+  line-height: 1.6;
+  margin-top: 7rem;
 }
 @media (max-width: 820px) {
   .main .panel.work-experience .content .column-center__content:first-of-type h4 {
@@ -237,11 +236,13 @@ body p {
   }
 }
 .main .panel.work-experience .content .column-center__content > div {
+  padding-bottom: 3rem;
   position: relative;
 }
 @media (max-width: 820px) {
   .main .panel.work-experience .content .column-center__content > div {
-    padding-left: 4rem;
+    padding-right: 0 !important;
+    padding-left: 2rem !important;
     padding-bottom: 4rem;
   }
 }
@@ -302,7 +303,7 @@ body p {
 .main .panel.my-services .columns {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem 4rem;
+  gap: 4rem;
 }
 @media (max-width: 1024px) {
   .main .panel.my-services .columns {
@@ -323,13 +324,13 @@ body p {
 }
 .main .panel.my-services .columns .item .svg-wrapper {
   background-color: #FF9000;
-  padding: 20px 20px 14px;
+  padding: 20px 20px 12px;
   border-radius: 50%;
   margin: auto;
   width: max-content;
 }
 .main .panel.my-services .columns .item .svg-wrapper span {
-  font-size: 48px;
+  font-size: 60px;
 }
 .main .panel.my-services .columns .item .svg-wrapper i {
   font-size: 40px;
@@ -338,7 +339,7 @@ body p {
   font-size: 24px;
   font-weight: 400;
   line-height: 1.5;
-  margin: 1rem 0 1rem;
+  margin: 2rem 0 1rem;
   text-align: center;
 }
 .main .panel.my-services .columns .item p {
@@ -414,6 +415,16 @@ body p {
   position: relative;
   text-align: center;
 }
+@media (max-width: 1024px) {
+  .main .panel.work .inner-section .content .container .owl-stage-outer .owl-stage .item {
+    height: 420px;
+  }
+}
+@media (max-width: 600px) {
+  .main .panel.work .inner-section .content .container .owl-stage-outer .owl-stage .item {
+    height: 380px;
+  }
+}
 .main .panel.work .inner-section .content .container .owl-stage-outer .owl-stage .item a {
   color: #000;
   display: flex;
@@ -426,6 +437,9 @@ body p {
   height: 100%;
   object-fit: contain;
   max-height: 170px;
+}
+.main .panel.contact {
+  height: 100vh;
 }
 .main .panel.contact .inner-section .content h2 {
   margin-bottom: 1em;

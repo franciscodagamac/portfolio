@@ -1,14 +1,6 @@
 $(document).ready(function(){
 
     function resizeWindow() {
-        if ($(window).width() > 1024) {
-            $(".main").onepage_scroll({
-                sectionContainer: "section.panel",
-                loop: false,
-                keyboard: true
-            });
-        }
-
         if ($(window).width() <= 1024) {
             $('.panel.my-services .columns').addClass('owl-carousel owl-theme').owlCarousel({
                 margin: 60,
@@ -32,7 +24,7 @@ $(document).ready(function(){
                     0: {
                         items: 1,
                         margin: 30,
-                        stagePadding: 30,
+                        stagePadding: 60,
                     },
                     600: {
                         items: 3,
@@ -59,7 +51,7 @@ $(document).ready(function(){
             0: {
                 items: 1,
                 margin: 30,
-                stagePadding: 30,
+                stagePadding: 60,
             },
             600: {
                 items: 2,
@@ -72,6 +64,4 @@ $(document).ready(function(){
             }
         }
     });
-
-
 });
