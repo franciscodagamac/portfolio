@@ -417,9 +417,6 @@ body header .inner-content nav a.active {
     padding: 0 3rem;
   }
 }
-.main .panel.my-services .columns .owl-stage {
-  padding-left: 0 !important;
-}
 .main .panel.my-services .columns .item {
   width: calc(33.3333333333% - 43px);
 }
@@ -450,6 +447,49 @@ body header .inner-content nav a.active {
 }
 .main .panel.my-services .columns .item p {
   color: rgba(255, 255, 255, 0.7);
+}
+.main .panel.my-services .columns .owl-stage {
+  padding-left: 0 !important;
+}
+.main .panel.my-services .columns .owl-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-left: -4rem;
+  margin-top: 2rem;
+}
+.main .panel.my-services .columns .owl-nav button {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 50%;
+  padding: 1rem !important;
+  line-height: 0;
+}
+@media (max-width: 1024px) {
+  .main .panel.my-services .columns .owl-nav button {
+    padding: 0.5rem !important;
+  }
+}
+.main .panel.my-services .columns .owl-nav button.owl-prev {
+  left: 4px;
+}
+@media (max-width: 1024px) {
+  .main .panel.my-services .columns .owl-nav button.owl-prev {
+    left: 0;
+  }
+}
+.main .panel.my-services .columns .owl-nav button.owl-next {
+  right: 4px;
+}
+@media (max-width: 1024px) {
+  .main .panel.my-services .columns .owl-nav button.owl-next {
+    right: 12rem;
+  }
+}
+@media (max-width: 600px) {
+  .main .panel.my-services .columns .owl-nav button.owl-next {
+    right: 10rem;
+  }
 }
 .main .panel.skills .container {
   display: flex;
@@ -491,6 +531,46 @@ body header .inner-content nav a.active {
   font-size: 24px;
   color: #fff;
   text-align: center;
+}
+.main .panel.skills .container .owl-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-left: -4rem;
+  margin-top: 2rem;
+}
+.main .panel.skills .container .owl-nav button {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 50%;
+  padding: 1rem !important;
+  line-height: 0;
+}
+@media (max-width: 1024px) {
+  .main .panel.skills .container .owl-nav button {
+    padding: 0.5rem !important;
+  }
+}
+.main .panel.skills .container .owl-nav button.owl-prev {
+  left: 4px;
+}
+@media (max-width: 1024px) {
+  .main .panel.skills .container .owl-nav button.owl-prev {
+    left: 0;
+  }
+}
+.main .panel.skills .container .owl-nav button.owl-next {
+  right: 4px;
+}
+@media (max-width: 1024px) {
+  .main .panel.skills .container .owl-nav button.owl-next {
+    right: 12rem;
+  }
+}
+@media (max-width: 600px) {
+  .main .panel.skills .container .owl-nav button.owl-next {
+    right: 10rem;
+  }
 }
 .main .panel.work .inner-section .content {
   max-width: 100%;
@@ -543,6 +623,48 @@ body header .inner-content nav a.active {
   height: 100%;
   object-fit: contain;
   max-height: 170px;
+}
+.main .panel.work .inner-section .content .container .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+.main .panel.work .inner-section .content .container .owl-nav button {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 50%;
+  padding: 1rem !important;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 1024px) {
+  .main .panel.work .inner-section .content .container .owl-nav button {
+    padding: 0.5rem !important;
+  }
+}
+.main .panel.work .inner-section .content .container .owl-nav button.owl-prev {
+  left: 4px;
+}
+@media (max-width: 1024px) {
+  .main .panel.work .inner-section .content .container .owl-nav button.owl-prev {
+    left: 0;
+  }
+}
+.main .panel.work .inner-section .content .container .owl-nav button.owl-next {
+  right: 4px;
+}
+@media (max-width: 1024px) {
+  .main .panel.work .inner-section .content .container .owl-nav button.owl-next {
+    right: 12rem;
+  }
+}
+@media (max-width: 600px) {
+  .main .panel.work .inner-section .content .container .owl-nav button.owl-next {
+    right: 10rem;
+  }
 }
 .main .panel.contact {
   height: 100vh;
