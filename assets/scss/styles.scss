@@ -131,8 +131,14 @@ body {
                     text-transform: uppercase;
                     text-shadow: 1px 1px 2px #0000005c;
 
-                    &.active {
-                        color: $highlight-color;
+                    &.active, &:hover {
+                        background: linear-gradient(288deg,#ff8000,#f0c 53.2394%,#04f);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        text-fill-color: transparent;
+                        background-size: 500% auto;
+                        animation: textShine 5s ease-in-out infinite alternate;
                     }
                 }
             }
@@ -165,6 +171,15 @@ body {
 }
 
 // end Coming soon
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
 
 .main {
 
@@ -248,6 +263,8 @@ body {
                 }
 
                 h1 {
+                    
+
                     font-family: "Kaushan Script", cursive;
                     margin-bottom: 30px;
                     font-size: 50px;
@@ -264,30 +281,16 @@ body {
                     }
 
                     span {
+                        background: linear-gradient(288deg,#ff8000,#f0c 53.2394%,#04f);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        text-fill-color: transparent;
+                        background-size: 500% auto;
+                        animation: textShine 5s ease-in-out infinite alternate;
+
                         padding: 4px 15px;
                         position: relative;
-
-                        &::before {
-                            position: absolute;
-                            top: 40px;
-                            left: 0;
-                            width: 30px;
-                            height: 4px;
-                            content: '';
-                            background: #fff;
-                            margin-left: -30px;
-                        }
-
-                        &::after {
-                            position: absolute;
-                            top: 40px;
-                            right: 0;
-                            width: 30px;
-                            height: 4px;
-                            content: '';
-                            background: #fff;
-                            margin-right: -30px;
-                        }
                     }
                 }
 
@@ -583,6 +586,35 @@ body {
         }
 
         &.skills {
+
+            .inner-section {
+                .content {
+                    .dflex {
+                        display: flex;
+                        gap: 3rem;
+
+                        .stacks {
+                            height: 500px;
+                            width: 60%;
+                            margin-top: 3rem;
+
+                            img {
+                                height: 120px;
+                                object-fit: contain;
+                                width: auto;
+                            }
+                        }
+
+                        ul {
+                            li {
+                                font-size: 24px;
+                                font-weight: 400;
+                                line-height: 1.5;
+                            }
+                        }
+                    }
+                }
+            }
 
             .container {
                 display: flex;
