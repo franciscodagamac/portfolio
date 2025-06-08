@@ -660,7 +660,6 @@ body header .inner-content nav a.active, body header .inner-content nav a:hover 
 @media (max-width: 1024px) {
   .main .panel.work .inner-section .content .container {
     display: block;
-    padding: 0 3rem;
   }
 }
 .main .panel.work .inner-section .content .container .owl-stage-outer .owl-stage {
@@ -696,51 +695,35 @@ body header .inner-content nav a.active, body header .inner-content nav a:hover 
   height: 100%;
 }
 .main .panel.work .inner-section .content .container .owl-stage-outer .owl-stage .item img {
-  width: 220px;
+  max-width: 220px;
   height: 120px;
   margin: auto;
   object-fit: contain;
 }
 .main .panel.work .inner-section .content .container .owl-nav {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  transform: translateY(-50%);
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+@media (max-width: 1024px) {
+  .main .panel.work .inner-section .content .container .owl-nav {
+    padding-left: 3rem;
+  }
 }
 .main .panel.work .inner-section .content .container .owl-nav button {
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 50%;
-  padding: 1rem !important;
+  padding: 12px !important;
   line-height: 0;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+}
+.main .panel.work .inner-section .content .container .owl-nav button svg {
+  height: 14px;
+  width: 14px;
 }
 @media (max-width: 1024px) {
   .main .panel.work .inner-section .content .container .owl-nav button {
     padding: 0.5rem !important;
-  }
-}
-.main .panel.work .inner-section .content .container .owl-nav button.owl-prev {
-  left: 4px;
-}
-@media (max-width: 1024px) {
-  .main .panel.work .inner-section .content .container .owl-nav button.owl-prev {
-    left: 0;
-  }
-}
-.main .panel.work .inner-section .content .container .owl-nav button.owl-next {
-  right: 4px;
-}
-@media (max-width: 1024px) {
-  .main .panel.work .inner-section .content .container .owl-nav button.owl-next {
-    right: 12rem;
-  }
-}
-@media (max-width: 600px) {
-  .main .panel.work .inner-section .content .container .owl-nav button.owl-next {
-    right: 10rem;
   }
 }
 .main .panel.contact {

@@ -174,8 +174,8 @@ $(document).ready(function() {
         responsive: {
             0: {
                 items: 1,
-                margin: 30,
-                stagePadding: 60,
+                margin: 16,
+                stagePadding: 10,
             },
             600: {
                 items: 2,
