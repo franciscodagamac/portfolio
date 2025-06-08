@@ -320,25 +320,17 @@ body {
                         width: 100%;
                     }
 
-                    p {
-                        display: flex;
-                        gap: 1rem;
-                        
+                    .section-title {
+                        margin-bottom: 0;
+                        text-align: left;
+                    }
 
-                        strong {
-                            color: $font-color;
-                            width: 25%;
-                        }
+                    .social-links-wrapper {
+                        justify-content: normal;
+                        gap: 1.7rem;
 
-                        span {
-                            font-weight: 300;
-                            color: rgb(255, 255, 255, 0.5);
-                            width: 75%;
-                            
-                            * {
-                                font-weight: 300;
-                                color: rgb(255, 255, 255, 0.5);
-                            }
+                        a {
+                            font-size: 32px;
                         }
                     }
                 }
@@ -348,6 +340,14 @@ body {
 
                     @media(max-width: $tablet) {
                         width: 100%;
+                    }
+
+                    p {
+                        color: #7d7d7d;
+
+                        strong {
+                            color: #ffffff9c;
+                        }
                     }
 
                     .social-links-wrapper {
