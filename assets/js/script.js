@@ -1,5 +1,25 @@
 $(document).ready(function() {
 
+    $('.social_link_btn').click(function(e) {
+        e.preventDefault();
+
+        if ($(this).hasClass('linkedin-icon')) {
+            window.open('https://www.linkedin.com/in/fransxz/', '_blank');
+        }
+
+        if ($(this).hasClass('whatsapp-icon')) {
+            window.open('https://wa.me/+639362956250', '_blank');
+        }
+
+        if ($(this).hasClass('facebook-icon')) {
+            window.open('https://www.facebook.com/profile.php?id=100087192502472', '_blank');
+        }
+
+        if ($(this).hasClass('email-icon')) {
+            window.open('mailto:franciscodagamac@gmail.com', '_blank');
+        }
+    });
+
 
     // start animation
     let limit = {max: 100, pullRatio: 0},
@@ -110,6 +130,29 @@ $(document).ready(function() {
             });
         } else {
             $('.panel.my-services .columns, .panel.skills .container').removeClass('owl-carousel owl-theme').trigger('destroy.owl.carousel');
+        }
+
+        if ($(window).width() <= 600) {
+            $('.panel.skills ul').addClass('owl-carousel owl-theme').owlCarousel({
+                nav: true,
+                dots: false,
+                navText: [
+                    '<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_62_1011)"><path d="M9.28894 14.3291L19.0889 4.5291" stroke="#292929" stroke-width="1.82" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.28894 14.3291L19.0889 24.1291" stroke="#292929" stroke-width="1.82" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="clip0_62_1011"><rect width="28" height="28" fill="white" transform="translate(0.888916 0.329102)"/></clipPath></defs></svg>',
+                    '<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.7111 14.3291L9.91106 24.1291" stroke="#292929" stroke-width="1.82" stroke-linecap="round" stroke-linejoin="round"/><path d="M19.7111 14.3291L9.91106 4.5291" stroke="#292929" stroke-width="1.82" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+                ],
+                responsive: {
+                    0: {
+                        items: 1,
+                        margin: 16,
+                        stagePadding: 20,
+                    },
+                    480: {
+                        items: 2,
+                        margin: 30,
+                        stagePadding: 40,
+                    }
+                }
+            });
         }
     }
     

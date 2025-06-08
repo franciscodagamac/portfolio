@@ -323,6 +323,7 @@ body {
                     .section-title {
                         margin-bottom: 0;
                         text-align: left;
+
                     }
 
                     .social-links-wrapper {
@@ -598,6 +599,10 @@ body {
                             width: 60%;
                             margin-top: 3rem;
 
+                            @media(max-width: $mobile) {
+                                display: none;
+                            }
+
                             img {
                                 height: 120px;
                                 object-fit: contain;
@@ -606,10 +611,72 @@ body {
                         }
 
                         ul {
+                            @media(max-width: $mobile) {
+                                list-style: none;
+                                margin: 0;
+                                padding: 0;
+                            }
+
+                            .owl-stage-outer {
+                                // overflow: auto;
+
+                                .owl-stage {
+
+                                    .owl-item {
+                                        height: 100%;
+                                    }
+                                }
+                            }
+
+                            .owl-nav {
+                                display: flex;
+                                gap: 0.6rem;
+                                margin-top: 2rem;
+                                padding-left: 40px;
+
+                                button {
+                                    background-color: #fff;
+                                    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                                    border-radius: 50%;
+                                    padding: 10px !important;
+                                    line-height: 0;
+
+                                    svg {
+                                        height: 14px;
+                                        width: 14px;
+                                    }
+                                }
+                            }
+
                             li {
                                 font-size: 24px;
                                 font-weight: 400;
                                 line-height: 1.5;
+
+                                @media(max-width: $mobile) {
+                                    background-color: $gray;
+                                    padding: 1rem;
+                                    text-align: center;
+                                }
+
+                                img {
+                                    display: none;
+
+                                    @media(max-width: $mobile) {
+                                        display: block;
+                                        height: 200px;
+                                        max-width: 150px;
+                                        margin: auto;
+                                        margin-bottom: 1rem;
+                                        object-fit: contain;
+                                    }
+                                }
+
+                                span {
+                                    @media(max-width: $mobile) {
+                                        font-size: 14px;
+                                    }
+                                }
                             }
                         }
                     }
@@ -737,7 +804,7 @@ body {
                                     background: #fafafa;
                                     border: 1px solid $secondary-color;
                                     border-radius: 6px;
-                                    height: 500px;
+                                    height: 400px;
                                     display: flex;
                                     flex-direction: column;
                                     justify-content: center;
@@ -768,10 +835,10 @@ body {
                                     }
 
                                     img {
-                                        width: 100%;
-                                        height: 100%;
+                                        width: 220px;
+                                        height: 120px;
+                                        margin: auto;
                                         object-fit: contain;
-                                        max-height: 170px;
                                     }
                                 }
                             }    
