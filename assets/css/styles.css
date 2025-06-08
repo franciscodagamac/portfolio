@@ -270,22 +270,16 @@ body header .inner-content nav a.active, body header .inner-content nav a:hover 
     width: 100%;
   }
 }
-.main .panel.about-me .two-col .left p {
-  display: flex;
-  gap: 1rem;
+.main .panel.about-me .two-col .left .section-title {
+  margin-bottom: 0;
+  text-align: left;
 }
-.main .panel.about-me .two-col .left p strong {
-  color: #fafafa;
-  width: 25%;
+.main .panel.about-me .two-col .left .social-links-wrapper {
+  justify-content: normal;
+  gap: 1.7rem;
 }
-.main .panel.about-me .two-col .left p span {
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.5);
-  width: 75%;
-}
-.main .panel.about-me .two-col .left p span * {
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.5);
+.main .panel.about-me .two-col .left .social-links-wrapper a {
+  font-size: 32px;
 }
 .main .panel.about-me .two-col .right {
   width: 65%;
@@ -294,6 +288,12 @@ body header .inner-content nav a.active, body header .inner-content nav a:hover 
   .main .panel.about-me .two-col .right {
     width: 100%;
   }
+}
+.main .panel.about-me .two-col .right p {
+  color: #7d7d7d;
+}
+.main .panel.about-me .two-col .right p strong {
+  color: rgba(255, 255, 255, 0.6117647059);
 }
 .main .panel.about-me .two-col .right .social-links-wrapper {
   justify-content: flex-start;
