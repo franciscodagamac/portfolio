@@ -792,6 +792,8 @@ body {
 
                         @media(max-width: $tablet) {
                             display: block;
+                            padding-left: 2rem;
+                            padding-right: 2rem;
                         }
 
                         .owl-stage-outer {
@@ -848,10 +850,6 @@ body {
                             display: flex;
                             gap: 0.6rem;
                             margin-top: 1rem;
-
-                            @media(max-width: $tablet) {
-                                padding-left: 3rem;
-                            }
 
                             button {
                                 background-color: #fff;
