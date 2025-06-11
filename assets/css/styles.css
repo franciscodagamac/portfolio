@@ -415,7 +415,8 @@ body header .inner-content nav a.active, body header .inner-content nav a:hover 
 @media (max-width: 1024px) {
   .main .panel.my-services .columns {
     display: block;
-    padding: 0 3rem;
+    width: 80vw;
+    padding: 0 2rem;
   }
 }
 .main .panel.my-services .columns .item {
@@ -449,48 +450,29 @@ body header .inner-content nav a.active, body header .inner-content nav a:hover 
 .main .panel.my-services .columns .item p {
   color: rgba(255, 255, 255, 0.7);
 }
+@media (max-width: 1024px) {
+  .main .panel.my-services .columns .item p {
+    text-align: center;
+  }
+}
 .main .panel.my-services .columns .owl-stage {
   padding-left: 0 !important;
 }
 .main .panel.my-services .columns .owl-nav {
   display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin-left: -4rem;
+  gap: 0.6rem;
   margin-top: 2rem;
 }
 .main .panel.my-services .columns .owl-nav button {
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 50%;
-  padding: 1rem !important;
+  padding: 10px !important;
   line-height: 0;
 }
-@media (max-width: 1024px) {
-  .main .panel.my-services .columns .owl-nav button {
-    padding: 0.5rem !important;
-  }
-}
-.main .panel.my-services .columns .owl-nav button.owl-prev {
-  left: 4px;
-}
-@media (max-width: 1024px) {
-  .main .panel.my-services .columns .owl-nav button.owl-prev {
-    left: 0;
-  }
-}
-.main .panel.my-services .columns .owl-nav button.owl-next {
-  right: 4px;
-}
-@media (max-width: 1024px) {
-  .main .panel.my-services .columns .owl-nav button.owl-next {
-    right: 12rem;
-  }
-}
-@media (max-width: 600px) {
-  .main .panel.my-services .columns .owl-nav button.owl-next {
-    right: 10rem;
-  }
+.main .panel.my-services .columns .owl-nav button svg {
+  height: 14px;
+  width: 14px;
 }
 .main .panel.skills .inner-section .content .dflex {
   display: flex;
@@ -515,8 +497,11 @@ body header .inner-content nav a.active, body header .inner-content nav a:hover 
   .main .panel.skills .inner-section .content .dflex ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 2rem;
   }
+}
+.main .panel.skills .inner-section .content .dflex ul .owl-stage-outer .owl-stage {
+  padding-left: 0 !important;
 }
 .main .panel.skills .inner-section .content .dflex ul .owl-stage-outer .owl-stage .owl-item {
   height: 100%;
@@ -525,7 +510,6 @@ body header .inner-content nav a.active, body header .inner-content nav a:hover 
   display: flex;
   gap: 0.6rem;
   margin-top: 2rem;
-  padding-left: 40px;
 }
 .main .panel.skills .inner-section .content .dflex ul .owl-nav button {
   background-color: #fff;
