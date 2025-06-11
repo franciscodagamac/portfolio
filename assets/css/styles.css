@@ -660,6 +660,8 @@ body header .inner-content nav a.active, body header .inner-content nav a:hover 
 @media (max-width: 1024px) {
   .main .panel.work .inner-section .content .container {
     display: block;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 .main .panel.work .inner-section .content .container .owl-stage-outer .owl-stage {
@@ -704,11 +706,6 @@ body header .inner-content nav a.active, body header .inner-content nav a:hover 
   display: flex;
   gap: 0.6rem;
   margin-top: 1rem;
-}
-@media (max-width: 1024px) {
-  .main .panel.work .inner-section .content .container .owl-nav {
-    padding-left: 3rem;
-  }
 }
 .main .panel.work .inner-section .content .container .owl-nav button {
   background-color: #fff;
