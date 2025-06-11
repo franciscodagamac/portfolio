@@ -497,7 +497,8 @@ body {
 
                 @media(max-width: $tablet) {
                     display: block;
-                    padding: 0 3rem;
+                    width: 80vw;
+                    padding: 0 2rem;
                 }
 
                 .item {
@@ -533,6 +534,10 @@ body {
 
                     p {
                         color: rgba(255, 255, 255, .7);
+                        
+                        @media(max-width: $tablet) {
+                            text-align: center;
+                        }
                     }
                 }
 
@@ -542,44 +547,19 @@ body {
 
                 .owl-nav {
                     display: flex;
-                    gap: 1rem;
-                    justify-content: center;
-                    margin-left: -4rem;
+                    gap: 0.6rem;
                     margin-top: 2rem;
 
                     button {
                         background-color: #fff;
                         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
                         border-radius: 50%;
-                        padding: 1rem !important;
+                        padding: 10px !important;
                         line-height: 0;
 
-                        // position: absolute;
-                        // top: 50%;
-                        // transform: translateY(-50%);
-
-                        @media(max-width: $tablet) {
-                            padding: 0.5rem !important;
-                        }
-
-                        &.owl-prev {
-                            left: 4px;
-                            
-                            @media(max-width: $tablet) {
-                                left: 0;
-                            }
-                        }
-
-                        &.owl-next {
-                            right: 4px;
-
-                            @media(max-width: $tablet) {
-                                right: 12rem;
-                            }
-
-                            @media(max-width: $mobile) {
-                                right: 10rem;
-                            }
+                        svg {
+                            height: 14px;
+                            width: 14px;
                         }
                     }
                 }
@@ -614,13 +594,14 @@ body {
                             @media(max-width: $mobile) {
                                 list-style: none;
                                 margin: 0;
-                                padding: 0;
+                                padding: 0 2rem;
                             }
 
                             .owl-stage-outer {
                                 // overflow: auto;
 
                                 .owl-stage {
+                                    padding-left: 0!important;
 
                                     .owl-item {
                                         height: 100%;
@@ -632,7 +613,6 @@ body {
                                 display: flex;
                                 gap: 0.6rem;
                                 margin-top: 2rem;
-                                padding-left: 40px;
 
                                 button {
                                     background-color: #fff;
