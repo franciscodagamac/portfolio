@@ -165,7 +165,7 @@ $(document).ready(function() {
 
     $('.worksectioncarousel').owlCarousel({
         // loop: true,
-        margin: 60,
+        margin: 40,
         nav: true,
         navText: [
             '<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_62_1011)"><path d="M9.28894 14.3291L19.0889 4.5291" stroke="#292929" stroke-width="1.82" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.28894 14.3291L19.0889 24.1291" stroke="#292929" stroke-width="1.82" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="clip0_62_1011"><rect width="28" height="28" fill="white" transform="translate(0.888916 0.329102)"/></clipPath></defs></svg>',
@@ -175,8 +175,8 @@ $(document).ready(function() {
         responsive: {
             0: {
                 items: 1,
-                margin: 16,
-                stagePadding: 10,
+                // margin: 16,
+                stagePadding: 0,
             },
             600: {
                 items: 2,
