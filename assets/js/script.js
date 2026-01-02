@@ -4,7 +4,7 @@ $(document).ready(function() {
         e.preventDefault();
 
         if ($(this).hasClass('linkedin-icon')) {
-            window.open('https://www.linkedin.com/in/fransxz/', '_blank');
+            window.open('https://www.linkedin.com/in/francisco-dagamac/', '_blank');
         }
 
         if ($(this).hasClass('whatsapp-icon')) {
